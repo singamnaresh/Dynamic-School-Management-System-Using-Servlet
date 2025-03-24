@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form - Z.P.H.S Munugode</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f4faff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f7a519;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #f7a519;
+    }
+
+    .container {
+      padding: 50px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      color: #673ab7;
+      margin-bottom: 20px;
+    }
+
+    .container p {
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .admission-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .admission-form label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #555;
+    }
+
+    .admission-form input,
+    .admission-form select,
+    .admission-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .admission-form button {
+      background-color: #673ab7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .admission-form button:hover {
+      background-color: #5a2ca7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 50px;
+      box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Z.P.H.S Munugode</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="rankers.html">Top Rankers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Admission Form</h1>
+    <p>Fill out the form below to apply for admission to Z.P.H.S Munugode.</p>
+    <div class="admission-form">
+      <form action="#" method="post">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name" placeholder="Enter full name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="class">Class Applying For:</label>
+        <select id="class" name="class" required>
+          <option value="" disabled selected>Select Class</option>
+          <option value="6">6th</option>
+          <option value="7">7th</option>
+          <option value="8">8th</option>
+          <option value="9">9th</option>
+          <option value="10">10th</option>
+        </select>
+
+        <label for="parent-name">Parent/Guardian Name:</label>
+        <input type="text" id="parent-name" name="parent-name" placeholder="Enter parent/guardian name" required>
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" placeholder="Enter contact number" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" placeholder="Enter complete address" required></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Z.P.H.S Munugode. All rights reserved.</p>
+  </footer>
+</body>
+</html>

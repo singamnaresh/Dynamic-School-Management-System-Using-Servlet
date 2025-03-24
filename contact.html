@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Z.P.H.S Munugode</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f4faff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f7a519;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #f7a519;
+    }
+
+    .container {
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-header h1 {
+      font-size: 2.5rem;
+      color: #673ab7;
+    }
+
+    .section-header p {
+      color: #555;
+    }
+
+    .contact-form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info,
+    .form-container {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-info {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h3 {
+      color: #f71937;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .contact-info a {
+      color: #673ab7;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .form-container form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container form label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #555;
+    }
+
+    .form-container form input,
+    .form-container form textarea,
+    .form-container form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container form button {
+      background-color: #673ab7;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-container form button:hover {
+      background-color: #5a2ca7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 50px;
+      box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <section class="section-header">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Get in touch with us using the form below or reach out directly.</p>
+    </section>
+
+    <section class="contact-form">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>School Address</h3>
+        <p>Z.P.H.S Munugode</p>
+        <p>Munugode, Telangana, India</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: <a href="mailto:info@zphsmunugode.com">info@zphsmunugode.com</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="form-container">
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Z.P.H.S Munugode. All rights reserved.</p>
+  </footer>
+</body>
+</html>
